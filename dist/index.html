@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase9</title>
+
+    <style>
+        main h2 {
+            text-align: center;
+            padding: 12;
+            background-color: black;
+            color: aliceblue
+        }
+
+        .form {
+            background-color: cadetblue;
+            padding: 20;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h2>Firebase9 Setup</h2>
+
+        <!-- add book form -->
+        <div class="form">
+            <h4>Add New Book</h4>
+            <form id="add-book-form">
+                <input type="text" name="author" placeholder="book author">
+                <input type="text" name="title" placeholder="book title">
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+
+
+        <div class="books">
+            <h4>Available Books</h4>
+
+            <div id="books-container"></div>
+        </div>
+    </main>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
